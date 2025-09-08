@@ -12,7 +12,11 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   {
-    ignores: ["components/ui/**/*"],
+    ignores: [
+      "node_modules",
+      ".next",
+      "components/ui/**/*"
+    ],
   },
   ...compat.extends(
     "next/core-web-vitals",
@@ -34,6 +38,8 @@ const eslintConfig = [
             "index",
             "object",
           ],
+
+
 
           "newlines-between": "always",
 
@@ -61,6 +67,8 @@ const eslintConfig = [
 
     rules: {
       "no-undef": "off",
+      "@typescript-eslint/triple-slash-reference": "off",
+      "@typescript-eslint/no-explicit-any": "off", // optional for your code
     },
   },
 ];
