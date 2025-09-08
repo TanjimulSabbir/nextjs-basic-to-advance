@@ -1,0 +1,1 @@
+1. npm install --save-dev eslint eslint-config-next eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier eslint-plugin-tailwindcss --legacy-peer-deps
