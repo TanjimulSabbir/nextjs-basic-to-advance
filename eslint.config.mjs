@@ -39,8 +39,6 @@ const eslintConfig = [
             "object",
           ],
 
-
-
           "newlines-between": "always",
 
           pathGroups: [
