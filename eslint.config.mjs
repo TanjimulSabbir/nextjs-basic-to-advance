@@ -22,8 +22,7 @@ const eslintConfig = [
     "next/core-web-vitals",
     "next/typescript",
     "standard",
-    "prettier"
-    // "plugin:tailwindcss/recommended"
+    "prettier",
   ),
   {
     rules: {
@@ -64,9 +63,11 @@ const eslintConfig = [
     files: ["**/*.ts", "**/*.tsx"],
 
     rules: {
+      "semi": ["error", "always"],
       "no-undef": "off",
       "@typescript-eslint/triple-slash-reference": "off",
       "@typescript-eslint/no-explicit-any": "off", // optional for your code
+
     },
   },
 ];
