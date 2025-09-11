@@ -1,3 +1,9 @@
 1. npm install --save-dev eslint eslint-config-next eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier eslint-plugin-tailwindcss --legacy-peer-deps
 2. https://www.figma.com/design/2vtjgodtBxTdg0zOUHPvXh/JSM-Pro---DevOverflow?node-id=1-49&p=f&t=1OpA6SGMCMUClR9O-0 (DevOverflow)3
 3. https://github.com/adrianhajdin/jsmasterypro_devflow/tree/main
+4. https://roadmap.sh/guides/session-based-authentication
+5. https://roadmap.sh/guides/jwt-authentication
+6. https://medium.com/@prashantramnyc/difference-between-session-cookies-vs-jwt-json-web-tokens-for-session-management-4be67d2f066e
+7. https://github.com/adrianhajdin/jsmasterypro_devflow/tree/150e9fc8573743b07bdab22e2f633e4056b2f923
+8. https://next-auth.js.org/getting-started/client (next-auth)
+9. (for authentication: npm install next-auth, npx auth secret, create api/auth/[...nextauth]/route.ts(in app), auth.ts(root file))
