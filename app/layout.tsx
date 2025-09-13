@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { SessionProvider } from "next-auth/react";
 import { ReactNode } from "react";
 
 import "./globals.css";
 
+import AuthProviders from "@/components/auth/auth-client-provider/AuthProvider";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
-import { auth } from "@/auth";
-import { getServerSession } from "next-auth";
-
 
 const inter = localFont({
   src: "./fonts/InterVF.ttf",
@@ -33,8 +30,6 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = async ({ children }: { children: ReactNode }) => {
-  const session = await auth
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -44,10 +39,10 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
       </head>
-      <SessionProvider session={session}>
-        <body
-          className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
-        >
+      <body
+        className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
+      >
+        <AuthProviders>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -57,8 +52,8 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
             {children}
           </ThemeProvider>
           <Toaster />
-        </body>
-      </SessionProvider>
+        </AuthProviders>
+      </body>
     </html>
   );
 };
