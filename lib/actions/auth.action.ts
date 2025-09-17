@@ -13,7 +13,7 @@ import { SignInSchema, SignUpSchema } from "../Validations";
 import { signIn } from "next-auth/react";
 
 export async function signUpWithCredentials(
-  params: AuthCredentials
+  params: AuthCredentials 
 ): Promise<ActionResponse> {
   const validationResult = await action({ params, schema: SignUpSchema });
 
