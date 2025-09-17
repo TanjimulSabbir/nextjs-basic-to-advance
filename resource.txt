@@ -7,3 +7,5 @@
 7. https://github.com/adrianhajdin/jsmasterypro_devflow/tree/150e9fc8573743b07bdab22e2f633e4056b2f923
 8. https://next-auth.js.org/getting-started/client (next-auth)
 9. (for authentication: npm install next-auth, npx auth secret, create api/auth/[...nextauth]/route.ts(in app), auth.ts(root file))
+10. https://nextjs.org/docs/app/api-reference/file-conventions/page#searchparams-optional
+11. https://www.npmjs.com/package/query-string
