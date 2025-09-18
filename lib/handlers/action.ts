@@ -2,9 +2,7 @@
 
 import { Session } from "next-auth";
 import { ZodError, ZodSchema } from "zod";
-
-import { auth } from "@/auth";
-
+import { useSession } from "next-auth/react";
 import { UnauthorizedError, ValidationError } from "../http-errors";
 import dbConnect from "../mongoose";
 
@@ -41,7 +39,7 @@ async function action<T>({
   let session: Session | null = null;
 
   if (authorize) {
-    session = await auth();
+    const { data: session } = useSession();
 
     if (!session) {
       return new UnauthorizedError();

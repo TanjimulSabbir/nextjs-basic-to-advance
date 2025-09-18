@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import { formUrlQuery, removeKeysFromUrlQuery } from "@/lib/url";
 
 import { Input } from "../ui/input";
-import { log } from "console";
 
 interface Props {
   route: string;
