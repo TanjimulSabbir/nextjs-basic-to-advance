@@ -9,5 +9,5 @@
 9. (for authentication: npm install next-auth, npx auth secret, create api/auth/[...nextauth]/route.ts(in app), auth.ts(root file))
 10. https://nextjs.org/docs/app/api-reference/file-conventions/page#searchparams-optional
 11. https://www.npmjs.com/package/query-string
-TanjimulSabbir<SpiritedAway@Dev>Google
-What a frustrating site! The right and left keyboard keys don’t work at all. I’ve never seen such a poor UI experience. I’ve reported this issue and emailed multiple times, but I haven’t received any response. While loading new videos, it takes more than 10 seconds — can you imagine such slow performance in this era, especially from a software development platform? What a mess! What are you trying to teach us when your own site is this slow and has such poor UX? If this continues, I’m seriously considering unsubscribing. This is really disappointing and frustrating. Please address these issues as soon as possible.
+https://mongoosejs.com/docs/guide.html
+https://mongoosejs.com/docs/typescript.html
